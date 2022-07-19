@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="main">
+        <div class="head">
+            <h1 title="Back To Main Menu" data-event="mainMenu">Main Menu</h1>
+        </div>
+        <div data-event="general" class="menu translateIn">
+            <h2>Menu</h2>
+            <button data-event="newgame">New Game</button>
+            <button data-event="history">History</button>
+        </div>
+
+        <div data-event="general" class="window translateOut">
+            <div class="content">
+                <div id="item0" class="item"></div>
+                <div id="item1" class="item"></div>
+                <div id="item2" class="item"></div>
+                <div id="item3" class="item"></div>
+            </div>
+            <div class="content">
+                <div id="item4" class="item"></div>
+                <div id="item5" class="item"></div>
+                <div id="item6" class="item"></div>
+                <div id="item7" class="item"></div>
+            </div>
+            <div class="content">
+                <div id="item8" class="item"></div>
+                <div id="item9" class="item"></div>
+                <div id="item10" class="item"></div>
+                <div id="item11" class="item"></div>
+            </div>
+            <div class="content">
+                <div id="item12" class="item"></div>
+                <div id="item13" class="item"></div>
+                <div id="item14" class="item"></div>
+                <div id="item15" class="item"></div>
+            </div>
+        </div>
+        <div data-event="general" class="gameOver menu translateOut">
+            <h2>Game Over</h2>
+            <h4>GameID 🗝</h4>
+            <p data-event="id">s</p>
+            <h4>Time 🕑</h4>
+            <p data-event="time">s</p>
+        </div>
+        
+        <div data-event="general" class="history menu translateOut">
+            <h2>History</h2>
+            <table><tr><th>ID 🗝</th><th>Time 🕑</th></tr></table>
+            <div class="table">
+                <table>
+                    <tbody data-event="historyData">
+                        <tr>
+                            <td>000</td>
+                            <td>000</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+        </div>
+    </div>
+    <script type="module" src="index.js"></script>
+</body>
+
+</html>
